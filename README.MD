@@ -1,10 +1,10 @@
-###Multi-module gradle project with three modules
+### Multi-module gradle project with three modules
 
 - gRPC Interface
 - gRPC Server
 - gRPC Client
 
-##References : 
+## References : 
 
 - https://yidongnan.github.io/grpc-spring-boot-starter/en/server/getting-started.html
 
@@ -12,15 +12,15 @@
 
 - https://www.baeldung.com/grpc-introduction
 
-####Running the server
+#### Running the server
 
 > ./gradlew grpc_server:run
 
-####Running the client
+#### Running the client
 
 > ./gradlew grpc_client:run
 
-##grpcurl
+## grpcurl
 
 For testing without grpc client via grpcurl
 
@@ -74,6 +74,6 @@ com.mulani.grpc_project.GreetingService is a service:
 }
 ``` 
 
-##Streaming use-cases
+## Streaming use-cases
 https://grpc.io/docs/languages/java/basics/
 
