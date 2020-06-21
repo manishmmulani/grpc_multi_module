@@ -12,6 +12,10 @@
 
 - https://www.baeldung.com/grpc-introduction
 
+#### Generate server base implementation and stubs
+
+> ./gradlew grpc_interface:build
+
 #### Running the server
 
 > ./gradlew grpc_server:run
