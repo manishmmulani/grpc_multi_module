@@ -24,4 +24,5 @@ dependencies {
 //     mainClass = 'com.mulani.grpc_client.GreetingClient'
 // }
 
-mainClassName = 'com.mulani.grpc_client.GreetingClient'
+//mainClassName = 'com.mulani.grpc_client.GreetingClient'
+mainClassName = 'com.mulani.grpc_client.GStreamClient'

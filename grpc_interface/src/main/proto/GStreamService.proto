@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package com.mulani.grpc_project;
+
+option java_multiple_files=true;
+
+service GStreamService {
+  // server to stream large data
+  rpc getLargeDataset(InputNum) returns (stream GData);
+
+  // client to stream input data to server
+  rpc getSum(stream InputNum) returns (ResultNum);
+
+  // client to get result from server for each of 3 input records
+  rpc getSumStream(stream InputNum) returns (stream ResultNum);
+}
+
+message InputNum {
+  int32 number = 1;
+}
+
+message ResultNum {
+  int64 number = 1;
+}
+
+message GData {
+  int32 id = 1;
+  string title = 2;
+}

@@ -4,7 +4,7 @@
 - gRPC Server
 - gRPC Client
 
-## References : 
+## References
 
 - https://yidongnan.github.io/grpc-spring-boot-starter/en/server/getting-started.html
 
@@ -25,6 +25,11 @@
 > ./gradlew grpc_client:run
 
 ## grpcurl
+
+**Notes**
+- grpc_cli seems to be the ideal client for making unary rpc instead of grpcurl. Usage seems quite similar to grpcurl
+- github : https://github.com/grpc/grpc/blob/master/doc/command_line_tool.md
+- docker : https://hub.docker.com/r/namely/grpc-cli
 
 For testing without grpc client via grpcurl
 
@@ -80,4 +85,9 @@ com.mulani.grpc_project.GreetingService is a service:
 
 ## Streaming use-cases
 https://grpc.io/docs/languages/java/basics/
+
+#### TODO
+
+- Implement new module grpc_spring_boot_server
+- Reference : https://github.com/LogNet/grpc-spring-boot-starter
 

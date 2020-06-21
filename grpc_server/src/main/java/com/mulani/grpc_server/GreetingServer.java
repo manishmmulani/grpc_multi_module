@@ -5,7 +5,7 @@ import io.grpc.ServerBuilder;
 
 public class GreetingServer {
     public static void main(String[] args) throws Exception {
-        Server server = ServerBuilder.forPort(8080).addService(new GreetingServiceImpl()).build();
+        Server server = ServerBuilder.forPort(8080).addService(new GreetingServiceImpl()).addService(new GStreamServiceImpl()).build();
         server.start();
         server.awaitTermination();
     }
