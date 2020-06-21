@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    // application  plugin to define the main class
+    id 'application'
+}
+
+group 'com.mulani'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':grpc_interface')
+    implementation group:"io.grpc", name:"grpc-stub", version:"${rootProject.ext.grpcVersion}"
+    implementation group:"io.grpc", name:"grpc-protobuf", version:"${rootProject.ext.grpcVersion}"
+    implementation group:"io.grpc", name:"grpc-netty", version:"${rootProject.ext.grpcVersion}"
+}
+
+// If you are using a gradle version > 6.1, then change below line as
+// application {
+//     mainClass = 'com.mulani.grpc_server.GreetingServer'
+// }
+
+mainClassName = 'com.mulani.grpc_server.GreetingServer'
